@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera Palabras Aleatorias</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}"> 
+</head>
+<body>
+
+    <div align="center">
+        <div id="normal">
+            <img src="{% static "img/letras.jpg" %}" alt="Imagen Palabras">
+            <hr>
+            <h2>Contador de Palabras Generadas: {{cuenta}}</h2>            
+            <hr>
+            <h3>Nueva Palabra generada: {{palabra}}</h3>
+            <hr>
+            <a href="/generar">
+                <button class="btn">Generar otra palabra</button>
+            </a>
+            <hr>
+            <a href="/limpiar">
+                <button class="btn">Restablecer Contador</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
